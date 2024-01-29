@@ -33,6 +33,27 @@ for (int i=0; i<length; i++) {
     int charType = rand() % totalChars;
     const char *chars;
     int arraySize;
-    
+
+    if(includeUppercase && charType < sizeof(upperChars) -1) {
+        chars = upperChars;
+        arraySize = sizeof(upperChars) - 1;
+
+    }
+    else if (includeLowercase && charType < sizeof(lowercaseChars) -1) {
+        chars = lowercaseChars;
+        arraySize = sizeof(lowercaseChars) - 1;
+    }
+
+    else if (includeNumbers && charType < sizeof(numberChars) -1){
+        chars = numberChars;
+        arraySize = sizeof(numberChars) -1;
+    }
+
+    else {
+        chars = specialChars;
+        arraySize = sizeof(specialChars) -1;
+        
+    }
+
 }
 }
