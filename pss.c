@@ -71,4 +71,14 @@ int main() {
     printf("=== Random Password Generator ===\n");
     printf("Password length:");
     scanf("%d", &length);
+
+    printf("Include uppercase letters? (1 for yes, 0 for no):");
+    scanf("%d", &includeUppercase);
+    printf("Include lowercase letters? (1 for yes, 0 for no):");
+    scanf("%d", &includeLowercase);
+    printf("Include numbers? (1 for yes, 0 for no):");
+    scanf("%d", &includeNumbers);
+    printf("Include special characters? (1 for yes, 0 for no):");
+    scanf("%d", &includeSpecialChars);
+    
 }
