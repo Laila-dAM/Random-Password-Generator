@@ -6,5 +6,16 @@
 #define MAX_LENGTH 100
 
 void generatePassword (int length, int includeUppercase, int includeLowercase, int includeNumbers, int includeSpecialChars) {
-    
+
+    const char upperChars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+     const char lowercaseChars[] = "abcdefghijklmnopqrstuvwxyz";
+    const char numberChars[] = "0123456789";
+    const char specialChars[] = "!@#$%^&*()-_+=";
+
+srand((unsigned int)time(NULL));
+
+if(!(includeUppercase || includeLowercase || includeNumbers || includeSpecialChars)) {
+    printf("Select at least one type of character.\n");
+    return;
+}
 }
