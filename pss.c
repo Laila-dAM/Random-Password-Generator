@@ -52,8 +52,12 @@ for (int i=0; i<length; i++) {
     else {
         chars = specialChars;
         arraySize = sizeof(specialChars) -1;
-        
+
     }
+    index = rand() % arraySize;
+    password[i] = chars[index];
 
 }
+password[length] = '\0';
+printf("Generated Password: %s\n", password);
 }
