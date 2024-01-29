@@ -18,4 +18,10 @@ if(!(includeUppercase || includeLowercase || includeNumbers || includeSpecialCha
     printf("Select at least one type of character.\n");
     return;
 }
+
+int totalChars = 0;
+if (includeUppercase) totalChars += sizeof(upperChars) - 1;
+if (includeLowercase) totalChars += sizeof(lowercaseChars) - 1;
+if (includeNumbers) totalChars += sizeof(numberChars) - 1;
+if (includeSpecialChars) totalChars += sizeof(specialChars) - 1;
 }
