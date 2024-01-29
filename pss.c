@@ -24,4 +24,15 @@ if (includeUppercase) totalChars += sizeof(upperChars) - 1;
 if (includeLowercase) totalChars += sizeof(lowercaseChars) - 1;
 if (includeNumbers) totalChars += sizeof(numberChars) - 1;
 if (includeSpecialChars) totalChars += sizeof(specialChars) - 1;
+
+char password[MAX_LENGTH];
+int index;
+
+
+for (int i=0; i<length; i++) {
+    int charType = rand() % totalChars;
+    const char *chars;
+    int arraySize;
+    
+}
 }
