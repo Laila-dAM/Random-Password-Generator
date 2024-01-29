@@ -61,3 +61,14 @@ for (int i=0; i<length; i++) {
 password[length] = '\0';
 printf("Generated Password: %s\n", password);
 }
+
+int main() {
+    setlocale(LC_ALL,"en_US");
+
+    int length;
+    int includeUppercase, includeLowercase, includeNumbers, includeSpecialChars;
+
+    printf("=== Random Password Generator ===\n");
+    printf("Password length:");
+    scanf("%d", &length);
+}
